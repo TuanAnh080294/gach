@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    height: 300px;
+    background: url("http://brick.qtcmedia.com/wp-content/plugins/qtc-brick/qtc-options/options/images/bg_title_bar.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.breadcrumb>ol>a {
+    color: whitesmoke;
+}
