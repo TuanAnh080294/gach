@@ -1,7 +1,73 @@
+/* css-mobile */
 * {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #F9BF0F;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar-brand img {
+    width: 40%;
+}
+
+.navbar a {
+    color: #333;
+    font-weight: 600;
+}
+
+
+.navbar .nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-item:hover a {
+    color: #F9BF0F;
+}
+
+.nav-item .dropdown .dropdown-content {
+    opacity: 0;
+}
+
+.nav-item:hover .dropdown .dropdown-content {
+    opacity: 1;
+}
+
+
+.dropdown .dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    color: white;
 }
 
 .banner {
@@ -13,6 +79,7 @@
     font-weight: bold;
 }
 
+
 .main p:nth-child(1) {
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.6);
@@ -23,6 +90,7 @@ button#dropdownMenuButton {
     background-color: transparent;
     color: #333;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .banner {
@@ -57,12 +125,53 @@ li.breadcrumb-item.active {
     color: #333;
 }
 
+.product .card-img-top {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.product .card-img-top:after {
+    content: "Read this -";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
 footer {
     background: #333;
     color: rgba(255, 255, 255, 0.7);
     padding-top: 2rem;
+    overflow: hidden;
 }
 
-footer .col-12 {
-    margin-bottom: 1rem;
+footer .row:nth-child(1)>.col-12 {
+    margin-bottom: 3rem;
+}
+
+footer .row:nth-child(2) {
+    background-color: #F9BF0F;
+    padding: 1rem;
+}
+
+footer i {
+    margin-right: 1rem;
+}
+
+/* css-desktop */
+@media screen and (min-width: 768px) {
+    .navbar .nav-item {
+        width: 100px;
+        border-bottom: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .sort {
+        width: 30%;
+        margin-left: auto;
+    }
 }
